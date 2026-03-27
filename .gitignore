@@ -1,0 +1,5 @@
+api_key.py
+__pycache__/
+*.wav
+*.mp3
+.DS_Store
