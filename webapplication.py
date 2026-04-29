@@ -122,6 +122,7 @@ def start_transcription(audio_url):
     json_data = {
         "audio_url": audio_url,
         "speech_models": ["universal-3-pro"] 
+        "language_detection": True
     }
     response = requests.post(TRANSCRIPT_ENDPOINT, json=json_data, headers=HEADERS)
     return response.json()['id']
